@@ -1,0 +1,70 @@
+body {
+    background-color: cornflowerblue;
+    background-image: url("../img/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+/* teste 1 */
+
+.has-login1 .form-control {
+    padding-left: 2.375rem;
+    /* distance between icon and placeholder */
+}
+
+.form-control-feedback {
+    padding-top: 0.45rem;
+}
+
+.has-login1 .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: black;
+}
+
+.has-googleLogin {
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* fim teste 1 */
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+#boxLogin {
+    background-color: white;
+    border-radius: 10px;
+    width: auto;
+    height: 520px;
+    box-shadow: 8px 6px 4px rgba(83, 83, 83, 0.3);
+}
+
+#google-button {
+    border: 0;
+    background: transparent;
+}
+
+#google-img :hover {
+    border: 5px black;
+    border-radius: 1px;
+}
+
+#google-img {
+    width: 40px;
+    width: 40px;
+    border-radius: 100px;
+}

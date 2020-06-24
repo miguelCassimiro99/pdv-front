@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style-login.css">
+    <script src="https://kit.fontawesome.com/062c903d90.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="page-header">
+            <div class="row">
+                <!-- the boxLogin needs a review -->
+                <div class="col-sm-4 mx-auto mt-5" id="boxLogin">
+                    <h3>Sing In</h3>
+                    <form>
+
+                        <div class="form-group mt-5 has-login1">
+                            <span class="fas fa-envelope form-control-feedback"></span>
+                            <input type="email" id="email" class="form-control form-control-lg" placeholder="E-mail">
+
+                        </div>
+                        <div class="form-group mt-3 has-login1">
+                            <span class="fas fa-lock form-control-feedback"></span>
+                            <input type="password" id="senha" class="form-control form-control-lg" placeholder="Password">
+                        </div>
+                        <div class="form-group mt-2 ml-0">
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customRemember" name="remember">
+                                    <label class="custom-control-label" for="customRemember">
+                                        Lembrar de mim
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block" id="btn-login">SIGN IN</button>
+                        <hr>
+                        <!-- teste btn -->
+
+                        <div class="mt-4">
+                            <a href="https://www.google.com.br">
+                                <button type="button" class="btn btn-block" id="google-button" data-toggle='tooltip' data-placement="bottom" title="Sign In with Google">
+                                <img src="assets/img/google-login.jpg" alt="login with google" id="google-img">
+                            </button>
+                            </a>
+                            <!-- teste btn -->
+                        </div>
+
+                </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="bootstrap/js/bootstrap.min.js "></script>
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>

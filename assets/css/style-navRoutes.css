@@ -1,0 +1,37 @@
+body {
+    background-color: white;
+}
+
+.has-posNav {
+    background-color: rgb(219, 220, 221);
+    border-bottom: 1px solid rgb(202, 197, 197);
+}
+
+.has-navOptions {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-item {
+    padding: 10px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+#contenMainNavbar {
+    text-transform: uppercase;
+}
+
+.has-mainTable {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+    background-color: rgb(219, 220, 221);
+    display: flex;
+    height: 75vh;
+    overflow: auto;
+}
+
+tr {
+    text-align: center;
+}

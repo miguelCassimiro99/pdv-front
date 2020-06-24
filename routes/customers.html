@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/style-navRoutes.css" />
+    <script src="https://kit.fontawesome.com/062c903d90.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light mb-1 has-posNav">
+        <div class="nav-header">
+            <a href="#" class="navbar-brand">
+            MiguelMan
+        </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#contenMainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="contenMainNavbar">
+            <ul class="navbar-nav mx-auto has-navOptions font-weight-bold">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Histórico de Vendas</a>
+                </li>
+                <li class="nav-item active has-navOptions">
+                    <a href="#" class="nav-link">Clientes</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Estoque</a>
+                </li>
+            </ul>
+            <!-- usuário -->
+            <ul class="navbar-nav ml-auto has-userLogedCamp">
+                <li>
+                    <button class="btn btn-light">Usuário</button>
+                </li>
+            </ul>
+            <!-- usuário-end -->
+        </div>
+    </nav>
+    <!-- navbar-end -->
+
+    <!-- navbar - end -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- row 1 -->
+            <div class="col-sm-12">
+                <div class="has-mainTable">
+                    <table class="table table-active table-bordered table-sm">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>CPF</th>
+                                <th>Telefone</th>
+                                <th>E-mail</th>
+                                <th>Opções</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <th>Miguel</th>
+                                <th>000.000.000-00</th>
+                                <th>(12) 9 9775-1916</th>
+                                <th>miguel.silva@sistemaacs.com.br</th>
+                                <th>
+                                    <a href="#" type="button" data-toggle="modal" data-target="#modalEditClient">Editar</a>
+                                </th>
+                                <!-- modalEditClient -->
+                                <div class="modal fade" id="modalEditClient" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="titleModal">Clients</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-sm-12 mt-0">
+                                                            <form class="form-group">
+                                                                <label for="clientName">Nome</label>
+                                                                <input type="text" class="form-control" id="clientName">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6 mt-0">
+                                                            <form class="form-group">
+                                                                <label for="clientTel">Telefone</label>
+                                                                <input type="tel" class="form-control" id="clientTel">
+                                                            </form>
+                                                        </div>
+                                                        <div class="col-sm-6 mt-0">
+                                                            <form class="form-group">
+                                                                <label for="clientDocument">CPF / CNPJ</label>
+                                                                <input type="text" class="form-control" id="clientDocument" placeholder="somente números">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- modalEditClient - end -->
+                            </tr>
+                            <tr>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <!-- row 1 - end -->
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

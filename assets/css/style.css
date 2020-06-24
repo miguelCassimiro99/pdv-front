@@ -1,0 +1,282 @@
+/* .page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+    background-color: black;
+} */
+
+body {
+    background-color: white;
+}
+
+.has-posNav {
+    background-color: rgb(219, 220, 221);
+    border-bottom: 1px solid rgb(202, 197, 197);
+}
+
+.has-navOptions {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-item {
+    padding: 10px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+#contenMainNavbar {
+    text-transform: uppercase;
+}
+
+.has-grid1 {
+    /* padding: 0px; */
+    margin: 4px 2px;
+    height: 86vh;
+    background-color: rgb(219, 220, 221);
+    /* box-shadow: 3px 2px rgb(216, 206, 206); */
+    border-radius: 5px;
+    /* border: 1px solid red; */
+}
+
+.has-grid2 {
+    margin: 5px 0px;
+    height: 86vh;
+    background-color: rgb(219, 220, 221);
+    /* box-shadow: 3px 2px rgb(216, 206, 206); */
+    border-radius: 5px;
+}
+
+.has-clientLabel,
+.labelClient {
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.has-formClient {
+    margin: 0px;
+    padding: 0px;
+}
+
+select:invalid {
+    color: gray;
+}
+
+hr {
+    border: 1px solid white;
+    border-radius: 1px;
+}
+
+#inputProduct {
+    height: 32px;
+}
+
+
+/* teste input number */
+
+.number-input input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.number-input input[type=number]::-webkit-inner-spin-button,
+.number-input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.number-input {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.number-input button {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+}
+
+.number-input button:before,
+.number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 1px;
+    transform: translate(-50%, -50%);
+}
+
+.number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type=number] {
+    text-align: center;
+}
+
+.number-input.number-input {
+    margin-top: 0px;
+    /* border: 1px solid #ced4da; */
+    width: 10rem;
+    border-radius: .25rem;
+}
+
+
+/*tamanho campo geral*/
+
+.number-input.number-input button {
+    width: 2.6rem;
+    height: .6rem;
+}
+
+.number-input.number-input button.minus {
+    padding-left: 10px;
+}
+
+
+/* sinal mais e menos */
+
+.number-input.number-input button:before,
+.number-input.number-input button:after {
+    width: .7rem;
+    background-color: #495057;
+}
+
+
+/* campo do número */
+
+.number-input.number-input input[type=number] {
+    max-width: 5rem;
+    padding: .5rem;
+    border: 1px solid #ced4da;
+    border-width: 0 1px;
+    font-size: 0.8rem;
+    height: 2rem;
+    color: #495057;
+}
+
+
+/* teste input number - end*/
+
+
+/* tabela Grid de Produtos*/
+
+.has-productGrid {
+    /* border: 1px solid red; */
+    height: 35vh;
+    overflow: auto;
+}
+
+.has-endSaleButton {
+    margin: 1px 5px;
+    width: 170px;
+    height: 40px;
+    /* text-align: center; */
+    /* border: 1px solid red; */
+}
+
+a {
+    padding: 0px;
+}
+
+.has-endSaleForm {
+    margin: 0px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    /* padding-bottom: 5px; */
+}
+
+form.form-inline {
+    /* border: 1px solid red; */
+    padding: 2px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*grid sessao de produtos*/
+
+
+/*área de lançamento rápido*/
+
+#pill-products {
+    background-color: white;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+}
+
+#pills-tabProductsContent {
+    /* border: 1px solid red; */
+}
+
+#pills-product-tab {
+    border: 2px solid rgb(219, 220, 221);
+}
+
+#pills-home-tab {
+    margin-top: 1px;
+    display: flex;
+}
+
+.has-seller {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh;
+    height: 70vh;
+}
+
+.has-salesInfo {
+    /* border: 1px solid red; */
+    padding-left: 100px;
+}
+
+.has-lastSale {
+    border: 3px solid white;
+    margin: 10px;
+    width: 40vh;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(160, 159, 159);
+}
+
+.has-saleCount {
+    border: 3px solid white;
+    margin: 10px;
+    width: 40vh;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(160, 159, 159);
+}
+
+.has-mostSellerProduct {
+    border: 3px solid white;
+    margin: 10px;
+    width: 40vh;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(160, 159, 159);
+}
+
+.my-select {
+    background-color: rgb(245, 104, 16);
+    color: rgb(250, 251, 252);
+    border: 2px solid rgb(155, 63, 6);
+    border-radius: 20px;
+    padding: 6px 20px;
+    width: 25vw;
+    height: 60px;
+}
